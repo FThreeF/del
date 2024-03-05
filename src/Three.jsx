@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material';
 import React from 'react';
 
-const TriangleModule = ({ points }) => {
+const Three = ({ points }) => {
 	const calculateTriangleArea = () => {
 		const a = Math.sqrt((points[1].x - points[0].x) ** 2 + (points[1].y - points[0].y) ** 2);
 		const b = Math.sqrt((points[2].x - points[1].x) ** 2 + (points[2].y - points[1].y) ** 2);
@@ -14,10 +14,10 @@ const TriangleModule = ({ points }) => {
 
 	return (
 		<div>
-			<Typography variant='h5'>Площадь треугольника</Typography>
+			<Typography variant='h6'>Площадь треугольника</Typography>
 			<Typography variant='body1'>{calculateTriangleArea()}</Typography>
 		</div>
 	);
 };
 
-export default TriangleModule;
+export default Three;

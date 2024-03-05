@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import MainModule from './MainModule';
-import DistanceModule from './DistanceModule';
-import TriangleModule from './TriangleModule';
+import One from './One';
+import Three from './Three';
 import './Style.css';
+import Two from './Two';
 
 const App = () => {
 	const [points, setPoints] = useState([
-		{ x: 1, y: 4 },
-		{ x: 2, y: 2 },
-		{ x: 1, y: 3 },
+		{ x: 1, y: 1 },
+		{ x: 2, y: 4 },
+		{ x: 3, y: 3 },
 	]);
 
 
@@ -16,9 +16,9 @@ const App = () => {
   
 	return (
 		<div className='app'>
-			<DistanceModule points={points} />
-			<TriangleModule points={points} />
-			<MainModule points={points} setPoints={setPoints} />
+			<Two points={points} />
+			<Three points={points} />
+			<One points={points} setPoints={setPoints} />
 		</div>
 	);
 };

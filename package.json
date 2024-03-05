@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://fthreef.github.io/LabaTest3/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
